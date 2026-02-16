@@ -2043,6 +2043,20 @@ body.lightbox-open .mobile-bottom-bar {
   .home-page .hero-copy {
     border-radius: 20px;
     padding: 0.95rem 0.92rem 0.9rem;
+    background: linear-gradient(150deg, rgba(255, 255, 255, 0.98), rgba(255, 248, 253, 0.97), rgba(255, 244, 229, 0.96));
+    border-color: rgba(203, 164, 186, 0.95);
+    box-shadow: 0 14px 30px rgba(78, 46, 62, 0.22);
+  }
+
+  .home-page .hero::before {
+    filter: brightness(0.84) saturate(0.95);
+  }
+
+  .home-page .hero-title-gradient {
+    background: none;
+    -webkit-text-fill-color: initial;
+    color: #7f2f57;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   }
 
   .hero-actions {
