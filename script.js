@@ -850,7 +850,7 @@ function setupCakesPage() {
       return matchesSearch && matchesOccasion;
     });
 
-    cakesGrid.innerHTML = filteredCakes.map((cake) => createCakeCard(cake, comparedCakeIds.has(cake.id))).join("");
+    cakesGrid.innerHTML = filteredCakes.map((cake) => createCakeCard(cake)).join("");
     if (emptyState) {
       emptyState.hidden = filteredCakes.length !== 0;
     }
@@ -1004,9 +1004,8 @@ function setupCakesPage() {
   });
 }
 
-function createCakeCard(cake, isCompared = false) {
+function createCakeCard(cake) {
   const occasionText = cake.occasions.map(formatOccasion).join(", ");
-  const compareLabel = isCompared ? t("btn.addedCompare") : t("btn.compare");
 
   return `
     <article class="card">
@@ -1020,12 +1019,6 @@ function createCakeCard(cake, isCompared = false) {
         <p class="suggestion">${t("label.bestFor")}: ${occasionText}</p>
         <div class="card-actions">
           <button type="button" class="btn btn-primary btn-block" data-order-cake="${cake.id}">${t("btn.orderNow")}</button>
-          <button
-            type="button"
-            class="btn btn-outline btn-block compare-btn${isCompared ? " is-selected" : ""}"
-            data-compare-cake="${cake.id}"
-            aria-pressed="${isCompared ? "true" : "false"}"
-          >${compareLabel}</button>
         </div>
       </div>
     </article>

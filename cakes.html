@@ -64,25 +64,6 @@
 
     <section class="section">
       <div class="container">
-        <div class="filter-panel">
-          <div class="form-group search-group">
-            <label for="cakeSearch" data-i18n="cakes.searchLabel">Search by cake name</label>
-            <input type="search" id="cakeSearch" data-i18n-placeholder="cakes.searchPlaceholder" placeholder="Try: Black Forest, Chocolate, Vanilla...">
-          </div>
-          <div class="form-group">
-            <label for="occasionFilter" data-i18n="cakes.occasionLabel">Occasion suggestion</label>
-            <select id="occasionFilter">
-              <option value="all" data-i18n="option.allOccasions">All occasions</option>
-              <option value="birthday" data-i18n="option.birthday">Birthday</option>
-              <option value="anniversary" data-i18n="option.anniversary">Anniversary</option>
-              <option value="wedding" data-i18n="option.wedding">Wedding</option>
-            </select>
-          </div>
-          <div class="form-group filter-cta">
-            <button type="button" class="btn btn-soft btn-block" data-open-compare data-i18n="btn.compareCta" disabled>Compare (0/3)</button>
-          </div>
-        </div>
-
         <div id="cakesGrid" class="card-grid"></div>
         <p id="cakesEmpty" class="empty-state" data-i18n="cakes.noResults" hidden>No cakes found. Try a different search or filter.</p>
 
@@ -91,21 +72,6 @@
           <p class="muted small" data-i18n="cakes.recentDesc">Quickly revisit cakes you opened recently.</p>
           <p id="recentlyViewedEmpty" class="empty-state" data-i18n="cakes.recentEmpty">Your recently viewed cakes will appear here.</p>
           <div id="recentlyViewedGrid" class="recent-grid"></div>
-        </section>
-
-        <section class="compare-panel" aria-labelledby="compareTitle">
-          <div class="compare-header">
-            <div>
-              <h2 id="compareTitle" class="section-title" data-i18n="cakes.compareTitle">Compare Cakes</h2>
-              <p class="muted small" data-i18n="cakes.compareDesc">Select up to 3 cakes to compare flavor, pricing, and fit.</p>
-            </div>
-            <div class="compare-actions">
-              <span id="compareCount" class="compare-count" data-i18n="compare.selectedCount">0/3 selected</span>
-              <button type="button" class="btn btn-outline btn-sm" data-clear-compare data-i18n="btn.clear" disabled>Clear</button>
-            </div>
-          </div>
-          <p id="compareEmpty" class="empty-state" data-i18n="cakes.compareEmpty">No cakes selected yet. Tap “Compare” on any cake card.</p>
-          <div id="compareGrid" class="compare-grid"></div>
         </section>
       </div>
     </section>
