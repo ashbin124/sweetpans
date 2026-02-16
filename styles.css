@@ -341,6 +341,40 @@ p {
   z-index: -1;
 }
 
+.home-page .hero-copy {
+  background:
+    linear-gradient(150deg, rgba(255, 255, 255, 0.94), rgba(255, 247, 253, 0.9), rgba(255, 243, 224, 0.88));
+  border: 1px solid rgba(213, 176, 198, 0.75);
+  border-radius: 24px;
+  padding: 1.15rem 1.15rem 1.05rem;
+  box-shadow: 0 12px 28px rgba(102, 66, 84, 0.14);
+  backdrop-filter: blur(3px);
+}
+
+.home-page .hero-copy h1,
+.home-page .hero-copy p,
+.home-page .hero-copy .eyebrow,
+.home-page .hero-copy .badge {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.home-page .hero-copy .muted {
+  color: #4f3a45;
+}
+
+.home-page .hero-copy .btn {
+  box-shadow: 0 8px 20px rgba(77, 48, 64, 0.16);
+}
+
+.home-page .hero-copy .btn-soft {
+  color: #6f521f;
+  background: linear-gradient(120deg, #ffe6ab, #f2e5ff, #ffd898);
+}
+
+.home-page .hero-copy .btn-outline {
+  background: linear-gradient(120deg, #ffecf5, #efe2ff, #ffeabf);
+}
+
 .hero-grid {
   display: grid;
   gap: 1.8rem;
@@ -2004,6 +2038,11 @@ body.lightbox-open .mobile-bottom-bar {
 
   .hero {
     padding: 4.1rem 0 3.2rem;
+  }
+
+  .home-page .hero-copy {
+    border-radius: 20px;
+    padding: 0.95rem 0.92rem 0.9rem;
   }
 
   .hero-actions {
