@@ -357,6 +357,7 @@ const TRANSLATIONS = {
     "btn.orderThis": "Order This Cake",
     "btn.orderAgain": "Order Again",
     "btn.details": "Details",
+    "btn.share": "Share",
     "btn.closeDetails": "Close Details",
     "btn.compareCta": "Compare ({count}/3)",
     "btn.call": "Call",
@@ -412,6 +413,9 @@ const TRANSLATIONS = {
     "toast.maxCompare": "You can compare up to {count} cakes.",
     "toast.openingWhatsApp": "Opening WhatsApp with your order…",
     "toast.updateNumber": "Update WHATSAPP_NUMBER in script.js with digits only.",
+    "toast.shareCopied": "Cake link copied. Paste and share it anywhere.",
+    "toast.shareOpened": "Share options opened.",
+    "toast.shareFailed": "Unable to share this cake right now.",
     "validation.selectCake": "Please select a cake before placing your order.",
     "validation.name": "Please enter your name.",
     "validation.phoneRequired": "Please enter your phone number.",
@@ -503,6 +507,7 @@ const TRANSLATIONS = {
     "btn.orderThis": "ഈ കേക്ക് ഓർഡർ ചെയ്യുക",
     "btn.orderAgain": "വീണ്ടും ഓർഡർ",
     "btn.details": "Details",
+    "btn.share": "ഷെയർ",
     "btn.closeDetails": "വിശദാംശം അടയ്‌ക്കുക",
     "btn.compareCta": "Compare ({count}/3)",
     "btn.call": "Call",
@@ -558,6 +563,9 @@ const TRANSLATIONS = {
     "toast.maxCompare": "പരമാവധി {count} കേക്ക് മാത്രം താരതമ്യം ചെയ്യാം.",
     "toast.openingWhatsApp": "WhatsApp ഓർഡർ തുറക്കുന്നു…",
     "toast.updateNumber": "script.js-ൽ WHATSAPP_NUMBER ശരിയാക്കുക.",
+    "toast.shareCopied": "കേക്ക് ലിങ്ക് കോപ്പിയായി. ഇനി ഷെയർ ചെയ്യാം.",
+    "toast.shareOpened": "ഷെയർ ഓപ്ഷനുകൾ തുറന്നു.",
+    "toast.shareFailed": "ഇപ്പോൾ ഈ കേക്ക് ഷെയർ ചെയ്യാൻ കഴിഞ്ഞില്ല.",
     "validation.selectCake": "ഓർഡറിന് മുമ്പ് ഒരു കേക്ക് തിരഞ്ഞെടുക്കുക.",
     "validation.name": "ദയവായി പേര് നൽകുക.",
     "validation.phoneRequired": "ഫോൺ നമ്പർ നൽകുക.",
@@ -1009,6 +1017,69 @@ function setupCakesPage() {
     openModal(modal);
   };
 
+  const buildCakeSharePayload = (cakeId) => {
+    const cake = getCakeById(cakeId);
+    if (!cake) {
+      return null;
+    }
+
+    const shareUrl = new URL(window.location.href);
+    shareUrl.search = "";
+    shareUrl.hash = "";
+    shareUrl.searchParams.set("cake", cake.id);
+
+    return {
+      cake,
+      shareUrl: shareUrl.toString(),
+      shareText: `${cake.name} from Sweet Pan's • ₹${cake.pricePerKg}/kg`
+    };
+  };
+
+  const shareCake = async (cakeId) => {
+    const payload = buildCakeSharePayload(cakeId);
+    if (!payload) {
+      showToast(t("toast.shareFailed"));
+      return;
+    }
+
+    const { cake, shareUrl, shareText } = payload;
+    const shareBody = `${shareText}\n${shareUrl}`;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: `${cake.name} | Sweet Pan's`,
+          text: shareText,
+          url: shareUrl
+        });
+        return;
+      } catch (error) {
+        if (error && error.name === "AbortError") {
+          return;
+        }
+      }
+    }
+
+    if (navigator.clipboard && window.isSecureContext) {
+      try {
+        await navigator.clipboard.writeText(shareBody);
+        showToast(t("toast.shareCopied"));
+        return;
+      } catch (error) {
+        // Fall through to a URL-based share when clipboard permission is unavailable.
+      }
+    }
+
+    const whatsappShareUrl = `https://wa.me/?text=${encodeURIComponent(shareBody)}`;
+    const popup = window.open(whatsappShareUrl, "_blank", "noopener");
+    if (popup) {
+      showToast(t("toast.shareOpened"));
+      return;
+    }
+
+    showToast(t("toast.shareFailed"));
+  };
+
   const setDetailsMainImage = (cake, index) => {
     if (!detailsMainImage || !detailsThumbs) {
       return;
@@ -1093,10 +1164,21 @@ function setupCakesPage() {
   renderCakes();
   renderRecentlyViewed();
 
-  cakesGrid.addEventListener("click", (event) => {
+  const sharedCakeId = new URLSearchParams(window.location.search).get("cake");
+  if (sharedCakeId && getCakeById(sharedCakeId)) {
+    openCakeDetails(sharedCakeId);
+  }
+
+  cakesGrid.addEventListener("click", async (event) => {
     const imageButton = event.target.closest("[data-gallery-cake]");
     if (imageButton) {
       openLightboxByCakeId(imageButton.dataset.galleryCake, imageButton);
+      return;
+    }
+
+    const shareButton = event.target.closest("[data-share-cake]");
+    if (shareButton) {
+      await shareCake(shareButton.dataset.shareCake);
       return;
     }
 
@@ -1241,6 +1323,7 @@ function createCakeCard(cake) {
         <div class="card-actions">
           <button type="button" class="btn btn-primary btn-block" data-order-cake="${cake.id}">${t("btn.orderNow")}</button>
           <button type="button" class="btn btn-outline btn-sm btn-details" data-details-cake="${cake.id}">${t("btn.details")}</button>
+          <button type="button" class="btn btn-soft btn-sm btn-share" data-share-cake="${cake.id}">${t("btn.share")}</button>
         </div>
       </div>
     </article>

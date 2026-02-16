@@ -699,8 +699,12 @@ p {
 #cakesGrid .card-actions {
   margin-top: 0.55rem;
   gap: 0.45rem;
-  grid-template-columns: 1fr auto;
-  align-items: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+#cakesGrid .card-actions [data-order-cake] {
+  grid-column: 1 / -1;
 }
 
 #cakesGrid .card-actions .btn {
@@ -708,7 +712,8 @@ p {
   font-size: 0.9rem;
 }
 
-#cakesGrid .btn-details {
+#cakesGrid .btn-details,
+#cakesGrid .btn-share {
   min-height: 38px;
   padding: 0.52rem 0.74rem;
   font-size: 0.8rem;
@@ -1664,6 +1669,33 @@ body.lightbox-open {
   border-bottom: none;
 }
 
+.status-layout {
+  min-height: min(66vh, 580px);
+  display: grid;
+  place-items: center;
+}
+
+.status-card {
+  width: min(740px, 100%);
+  text-align: center;
+}
+
+.status-code {
+  margin: 0 0 0.55rem;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.2rem, 7vw, 4.2rem);
+  color: #8a6324;
+  line-height: 1;
+}
+
+.status-actions {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.64rem;
+  justify-content: center;
+}
+
 .site-footer {
   margin-top: 2.4rem;
   padding: 2.6rem 0 6.8rem;
@@ -1983,7 +2015,7 @@ body.lightbox-open .mobile-bottom-bar {
 
   #cakesGrid .card-actions {
     margin-top: 0.42rem;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   #cakesGrid .card-actions .btn {
@@ -1992,10 +2024,26 @@ body.lightbox-open .mobile-bottom-bar {
     min-height: 42px;
   }
 
-  #cakesGrid .btn-details {
+  #cakesGrid .btn-details,
+  #cakesGrid .btn-share {
     min-height: 38px;
     padding: 0.45rem 0.62rem;
     font-size: 0.74rem;
+  }
+
+  .status-layout {
+    min-height: auto;
+  }
+
+  .status-actions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .status-actions .btn {
+    width: 100%;
+    min-width: 0;
   }
 
   .cake-details-header {
