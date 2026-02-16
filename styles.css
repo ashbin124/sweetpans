@@ -1709,6 +1709,10 @@ body.lightbox-open .mobile-bottom-bar {
 }
 
 @media (max-width: 768px) {
+  .filter-panel .search-group {
+    display: none;
+  }
+
   body {
     padding-bottom: calc(96px + env(safe-area-inset-bottom));
     font-size: 16.5px;

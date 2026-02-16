@@ -65,7 +65,7 @@
     <section class="section">
       <div class="container">
         <div class="filter-panel">
-          <div class="form-group">
+          <div class="form-group search-group">
             <label for="cakeSearch" data-i18n="cakes.searchLabel">Search by cake name</label>
             <input type="search" id="cakeSearch" data-i18n-placeholder="cakes.searchPlaceholder" placeholder="Try: Black Forest, Chocolate, Vanilla...">
           </div>
@@ -83,6 +83,16 @@
           </div>
         </div>
 
+        <div id="cakesGrid" class="card-grid"></div>
+        <p id="cakesEmpty" class="empty-state" data-i18n="cakes.noResults" hidden>No cakes found. Try a different search or filter.</p>
+
+        <section class="recent-panel" aria-labelledby="recentTitle">
+          <h2 id="recentTitle" class="section-title" data-i18n="cakes.recentTitle">Recently Viewed</h2>
+          <p class="muted small" data-i18n="cakes.recentDesc">Quickly revisit cakes you opened recently.</p>
+          <p id="recentlyViewedEmpty" class="empty-state" data-i18n="cakes.recentEmpty">Your recently viewed cakes will appear here.</p>
+          <div id="recentlyViewedGrid" class="recent-grid"></div>
+        </section>
+
         <section class="compare-panel" aria-labelledby="compareTitle">
           <div class="compare-header">
             <div>
@@ -96,16 +106,6 @@
           </div>
           <p id="compareEmpty" class="empty-state" data-i18n="cakes.compareEmpty">No cakes selected yet. Tap “Compare” on any cake card.</p>
           <div id="compareGrid" class="compare-grid"></div>
-        </section>
-
-        <div id="cakesGrid" class="card-grid"></div>
-        <p id="cakesEmpty" class="empty-state" data-i18n="cakes.noResults" hidden>No cakes found. Try a different search or filter.</p>
-
-        <section class="recent-panel" aria-labelledby="recentTitle">
-          <h2 id="recentTitle" class="section-title" data-i18n="cakes.recentTitle">Recently Viewed</h2>
-          <p class="muted small" data-i18n="cakes.recentDesc">Quickly revisit cakes you opened recently.</p>
-          <p id="recentlyViewedEmpty" class="empty-state" data-i18n="cakes.recentEmpty">Your recently viewed cakes will appear here.</p>
-          <div id="recentlyViewedGrid" class="recent-grid"></div>
         </section>
       </div>
     </section>
