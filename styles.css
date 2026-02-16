@@ -587,6 +587,57 @@ p {
   margin-top: 0.8rem;
 }
 
+#cakesGrid.card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.78rem;
+}
+
+#cakesGrid .card {
+  padding: 0.72rem;
+}
+
+#cakesGrid .card img {
+  aspect-ratio: 16 / 11;
+}
+
+#cakesGrid .card-body {
+  padding: 0.68rem 0.1rem 0.12rem;
+}
+
+#cakesGrid .card-body h3 {
+  font-size: 1.08rem;
+  margin-bottom: 0.32rem;
+}
+
+#cakesGrid .price {
+  font-size: 1rem;
+  margin-bottom: 0.26rem;
+}
+
+#cakesGrid .muted.small {
+  font-size: 0.84rem;
+  margin-bottom: 0.42rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#cakesGrid .suggestion {
+  font-size: 0.8rem;
+  margin-bottom: 0.45rem;
+}
+
+#cakesGrid .card-actions {
+  margin-top: 0.55rem;
+  gap: 0.45rem;
+}
+
+#cakesGrid .card-actions .btn {
+  padding: 0.72rem 0.9rem;
+  font-size: 0.9rem;
+}
+
 .compare-btn.is-selected {
   color: #fff;
   border-color: transparent;
@@ -1711,6 +1762,48 @@ body.lightbox-open .mobile-bottom-bar {
 @media (max-width: 768px) {
   .filter-panel .search-group {
     display: none;
+  }
+
+  #cakesGrid.card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.62rem;
+  }
+
+  #cakesGrid .card {
+    padding: 0.56rem;
+  }
+
+  #cakesGrid .card img {
+    aspect-ratio: 1 / 1;
+  }
+
+  #cakesGrid .card-body {
+    padding: 0.56rem 0.04rem 0.06rem;
+  }
+
+  #cakesGrid .card-body h3 {
+    font-size: 0.98rem;
+    margin-bottom: 0.24rem;
+  }
+
+  #cakesGrid .price {
+    font-size: 0.92rem;
+    margin-bottom: 0.2rem;
+  }
+
+  #cakesGrid .muted.small,
+  #cakesGrid .suggestion {
+    display: none;
+  }
+
+  #cakesGrid .card-actions {
+    margin-top: 0.42rem;
+  }
+
+  #cakesGrid .card-actions .btn {
+    padding: 0.64rem 0.72rem;
+    font-size: 0.84rem;
+    min-height: 42px;
   }
 
   body {
