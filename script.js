@@ -16,11 +16,11 @@ const cakesData = [
       "Chocolate shavings add texture on top."
     ],
     occasions: ["birthday", "anniversary", "engagement"],
-    image: "https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1620490448382-d2f51a08596f?auto=format&fit=crop&w=900&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1620490448382-d2f51a08596f?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1518047601542-79f18c655718?auto=format&fit=crop&w=900&q=80"
     ]
   },
   {
@@ -35,11 +35,11 @@ const cakesData = [
       "Best for people who prefer milder chocolate flavor."
     ],
     occasions: ["birthday", "engagement"],
-    image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1672081880854-ea09c1e9ac44?auto=format&fit=crop&w=900&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1672081880854-ea09c1e9ac44?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1672081881329-735d21dffb2a?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1675522256390-9514b415bdca?auto=format&fit=crop&w=900&q=80"
     ]
   },
   {
@@ -54,11 +54,11 @@ const cakesData = [
       "A safe choice for most celebrations."
     ],
     occasions: ["birthday", "graduation"],
-    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1626263468007-a9e0cf83f1ac?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?auto=format&fit=crop&w=900&q=80"
     ]
   },
   {
@@ -73,11 +73,11 @@ const cakesData = [
       "Great for chocolate lovers who want extra richness."
     ],
     occasions: ["birthday", "anniversary"],
-    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1607257882338-70f7dd2ae344?auto=format&fit=crop&w=900&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1607257882338-70f7dd2ae344?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1716535232783-38a9e49eeffa?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1622922927068-76362ed40123?auto=format&fit=crop&w=900&q=80"
     ]
   },
   {
@@ -92,11 +92,11 @@ const cakesData = [
       "Popular choice for birthdays and family gatherings."
     ],
     occasions: ["birthday", "graduation"],
-    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1547414368-ac947d00b91d?auto=format&fit=crop&w=900&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1547414368-ac947d00b91d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1634839582502-c5d12a99db7d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1621792143337-7cb8554b4877?auto=format&fit=crop&w=900&q=80"
     ]
   },
   {
@@ -111,11 +111,11 @@ const cakesData = [
       "Smooth cream finish keeps the texture light."
     ],
     occasions: ["birthday", "engagement"],
-    image: "https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=900&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1655411880489-2f0d18785863?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1590869173972-7868b37913ab?auto=format&fit=crop&w=900&q=80"
     ]
   },
   {
@@ -130,11 +130,11 @@ const cakesData = [
       "Works well for premium birthday orders."
     ],
     occasions: ["wedding", "anniversary"],
-    image: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1768237536942-3a0015b90767?auto=format&fit=crop&w=900&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1768237536942-3a0015b90767?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1490288204017-3e80b339f649?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1598794854256-6c4bc115ded1?auto=format&fit=crop&w=900&q=80"
     ]
   },
   {
@@ -149,11 +149,11 @@ const cakesData = [
       "Popular for kids, baby showers, and daytime events."
     ],
     occasions: ["birthday", "baby shower"],
-    image: "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1602663491496-73f07481dbea?auto=format&fit=crop&w=900&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1602663491496-73f07481dbea?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1651482144016-5eeef0cba147?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1622621746668-59fb299bc4d7?auto=format&fit=crop&w=900&q=80"
     ]
   },
   {
@@ -168,11 +168,11 @@ const cakesData = [
       "A good premium alternative to standard flavors."
     ],
     occasions: ["wedding", "engagement"],
-    image: "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1702745284678-2ae974a7f0aa?auto=format&fit=crop&w=900&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1702745284678-2ae974a7f0aa?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1702745284748-59c103941c41?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1603379422471-65bd450a380a?auto=format&fit=crop&w=900&q=80"
     ]
   },
   {
@@ -187,11 +187,11 @@ const cakesData = [
       "Bright flavor profile suited for summer events."
     ],
     occasions: ["anniversary", "baby shower"],
-    image: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1567327613485-fbc7bf196198?auto=format&fit=crop&w=900&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1567327613485-fbc7bf196198?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1653469742883-c47111ae3bc4?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1703073185630-45b9ed0fd668?auto=format&fit=crop&w=900&q=80"
     ]
   },
   {
@@ -206,11 +206,11 @@ const cakesData = [
       "Classic choice for engagement and anniversary cakes."
     ],
     occasions: ["anniversary", "engagement"],
-    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1714386148315-2f0e3eebcd5a?auto=format&fit=crop&w=900&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1714386148315-2f0e3eebcd5a?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1685957652870-d56b0e5bea52?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=900&q=80"
     ]
   },
   {
@@ -225,11 +225,11 @@ const cakesData = [
       "Great choice when you want a trendy premium look."
     ],
     occasions: ["birthday", "anniversary"],
-    image: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1640794334523-b299f14d28db?auto=format&fit=crop&w=900&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1640794334523-b299f14d28db?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1703876086193-5d29f099205c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1675062521318-aa0797eae2b4?auto=format&fit=crop&w=900&q=80"
     ]
   },
   {
@@ -244,11 +244,11 @@ const cakesData = [
       "Good option when you want a less intense cake."
     ],
     occasions: ["birthday", "baby shower"],
-    image: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=900&q=80",
+    image: "https://images.unsplash.com/photo-1568051243857-068aa3ea934d?auto=format&fit=crop&w=900&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=900&q=80"
+      "https://images.unsplash.com/photo-1568051243857-068aa3ea934d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1624975964661-4999f124a4c3?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1536599524557-5f784dd53282?auto=format&fit=crop&w=900&q=80"
     ]
   }
 ];
