@@ -9,104 +9,247 @@ const cakesData = [
     name: "Black Forest",
     pricePerKg: 600,
     description: "Classic chocolate sponge layered with whipped cream and cherries.",
+    details: "Inspired by the classic German Black Forest gateau style, this cake combines chocolate sponge, cherries, whipped cream, and chocolate flakes.",
+    detailPoints: [
+      "Classic flavor profile: chocolate, cherry, and cream.",
+      "Light whipped cream keeps the finish soft, not too heavy.",
+      "Chocolate shavings add texture on top."
+    ],
     occasions: ["birthday", "anniversary", "engagement"],
-    image: "https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?auto=format&fit=crop&w=900&q=80"
+    image: "https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?auto=format&fit=crop&w=900&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80"
+    ]
   },
   {
     id: "white-forest",
     name: "White Forest",
     pricePerKg: 600,
     description: "Soft vanilla sponge with white chocolate shavings and light cream.",
+    details: "White Forest is a light, creamy style often built with vanilla sponge, whipped cream, and white chocolate, with cherry notes similar to Black Forest.",
+    detailPoints: [
+      "Softer and milkier profile than Black Forest.",
+      "White chocolate adds sweetness and smoothness.",
+      "Best for people who prefer milder chocolate flavor."
+    ],
     occasions: ["birthday", "engagement"],
-    image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80"
+    image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=900&q=80"
+    ]
   },
   {
     id: "chocolate",
     name: "Chocolate",
     pricePerKg: 800,
     description: "Moist chocolate sponge finished with smooth chocolate cream.",
+    details: "A classic chocolate cake focused on deep cocoa flavor, moist crumb, and smooth chocolate frosting for a rich but familiar taste.",
+    detailPoints: [
+      "Bold cocoa flavor with soft sponge texture.",
+      "Balanced sweetness for all age groups.",
+      "A safe choice for most celebrations."
+    ],
     occasions: ["birthday", "graduation"],
-    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80"
+    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=900&q=80"
+    ]
   },
   {
     id: "chocolate-truffle",
     name: "Chocolate Truffle",
     pricePerKg: 850,
     description: "Rich dark chocolate truffle layers with silky ganache finish.",
+    details: "Chocolate Truffle cake highlights ganache-style richness, with dense chocolate notes and a glossy finish inspired by chocolate truffle confections.",
+    detailPoints: [
+      "Intense chocolate hit with fudgy mouthfeel.",
+      "Ganache coating gives a premium finish.",
+      "Great for chocolate lovers who want extra richness."
+    ],
     occasions: ["birthday", "anniversary"],
-    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80"
+    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80"
+    ]
   },
   {
     id: "butter-scotch",
     name: "Butterscotch",
     pricePerKg: 850,
     description: "Classic butterscotch sponge with caramel crunch and cream.",
+    details: "Built around butterscotch flavor notes of butter and brown sugar, this cake is creamy, caramel-like, and mildly toasty.",
+    detailPoints: [
+      "Warm caramel-butter taste profile.",
+      "Crunch bits add contrast to soft cream layers.",
+      "Popular choice for birthdays and family gatherings."
+    ],
     occasions: ["birthday", "graduation"],
-    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80"
+    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=900&q=80"
+    ]
   },
   {
     id: "vancho",
     name: "Vancho",
     pricePerKg: 850,
     description: "Vanilla and chocolate layers blended in a smooth cream finish.",
+    details: "Vancho style combines vanilla and chocolate layers in one cake, giving both light creamy sweetness and cocoa depth in each bite.",
+    detailPoints: [
+      "Two-flavor profile: vanilla plus chocolate.",
+      "Good pick when guests like mixed flavors.",
+      "Smooth cream finish keeps the texture light."
+    ],
     occasions: ["birthday", "engagement"],
-    image: "https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=900&q=80"
+    image: "https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=900&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80"
+    ]
   },
   {
     id: "nutty-bubble",
     name: "Nutty Bubble",
     pricePerKg: 900,
     description: "Nut-filled sponge with creamy layers and crunchy nut topping.",
+    details: "Nutty Bubble is a nut-forward celebration cake style with creamy filling and crunchy nut topping for a rich texture contrast.",
+    detailPoints: [
+      "Strong roasted-nut aroma and flavor.",
+      "Crunchy top with soft interior layers.",
+      "Works well for premium birthday orders."
+    ],
     occasions: ["wedding", "anniversary"],
-    image: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80"
+    image: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80"
+    ]
   },
   {
     id: "strawberry",
     name: "Strawberry",
     pricePerKg: 750,
     description: "Fruit-forward sponge layered with strawberry cream and glaze.",
+    details: "Strawberry cake is known for a bright berry taste, usually balanced with whipped cream or light frosting for a fresh finish.",
+    detailPoints: [
+      "Fresh fruit profile with gentle tart-sweet balance.",
+      "Lighter feel than dense chocolate cakes.",
+      "Popular for kids, baby showers, and daytime events."
+    ],
     occasions: ["birthday", "baby shower"],
-    image: "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?auto=format&fit=crop&w=900&q=80"
+    image: "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?auto=format&fit=crop&w=900&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80"
+    ]
   },
   {
     id: "pistachio",
     name: "Pistachio",
     pricePerKg: 750,
     description: "Pistachio-flavored sponge with creamy nutty frosting.",
+    details: "Pistachio cake emphasizes aromatic nut flavor and a naturally rich, creamy profile often paired with soft sponge and mild sweetness.",
+    detailPoints: [
+      "Distinct nutty flavor with elegant aroma.",
+      "Creamy finish without being overly sweet.",
+      "A good premium alternative to standard flavors."
+    ],
     occasions: ["wedding", "engagement"],
-    image: "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&w=900&q=80"
+    image: "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&w=900&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=900&q=80"
+    ]
   },
   {
     id: "blueberry",
     name: "Blueberry",
     pricePerKg: 850,
     description: "Blueberry compote layered with light vanilla cream sponge.",
+    details: "Blueberry cakes are loved for their fruity aroma and juicy berry notes, typically paired with vanilla sponge and cream for balance.",
+    detailPoints: [
+      "Berry-forward taste with mild tartness.",
+      "Pairs well with vanilla-based sponge.",
+      "Bright flavor profile suited for summer events."
+    ],
     occasions: ["anniversary", "baby shower"],
-    image: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=80"
+    image: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80"
+    ]
   },
   {
     id: "red-velvet",
     name: "Red Velvet",
     pricePerKg: 850,
     description: "Classic red velvet sponge with smooth cream cheese frosting.",
+    details: "Red Velvet is a cocoa-based cake style with buttermilk-vinegar tenderness and a signature red crumb, usually finished with cream cheese frosting.",
+    detailPoints: [
+      "Mild cocoa flavor with velvety crumb texture.",
+      "Tangy cream cheese pairs with sweet sponge.",
+      "Classic choice for engagement and anniversary cakes."
+    ],
     occasions: ["anniversary", "engagement"],
-    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80"
+    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80"
+    ]
   },
   {
     id: "dream-cake",
     name: "Dream Cake",
     pricePerKg: 800,
     description: "Soft sponge and cream layers finished with chocolate drizzle.",
+    details: "Dream Cake style focuses on ultra-soft sponge, creamy layers, and chocolate topping for a rich but smooth dessert-style finish.",
+    detailPoints: [
+      "Dessert-like texture with soft layered finish.",
+      "Chocolate drizzle adds richness without heaviness.",
+      "Great choice when you want a trendy premium look."
+    ],
     occasions: ["birthday", "anniversary"],
-    image: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80"
+    image: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=80"
+    ]
   },
   {
     id: "vanilla",
     name: "Vanilla",
     pricePerKg: 750,
     description: "Classic vanilla sponge with fresh cream and light sweetness.",
+    details: "Vanilla cake keeps things simple and elegant with soft sponge, aromatic vanilla notes, and a clean cream finish.",
+    detailPoints: [
+      "Light, classic flavor that suits all age groups.",
+      "Smooth base flavor for custom toppings and messages.",
+      "Good option when you want a less intense cake."
+    ],
     occasions: ["birthday", "baby shower"],
-    image: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=900&q=80"
+    image: "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=900&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=900&q=80"
+    ]
   }
 ];
 
@@ -163,7 +306,7 @@ const TRANSLATIONS = {
     "home.step3Desc": "Send your details instantly and confirm your delivery slot.",
     "cakes.eyebrow": "Sweet Pan's Collection",
     "cakes.title": "Choose your cake, then customize your order.",
-    "cakes.desc": "Search by cake name or browse by occasion suggestions before ordering.",
+    "cakes.desc": "Browse cakes, tap Details for full info, and place your order in seconds.",
     "cakes.searchLabel": "Search by cake name",
     "cakes.searchPlaceholder": "Try: Black Forest, Chocolate, Vanilla...",
     "cakes.occasionLabel": "Occasion suggestion",
@@ -173,6 +316,8 @@ const TRANSLATIONS = {
     "cakes.recentTitle": "Recently Viewed",
     "cakes.recentDesc": "Quickly revisit cakes you opened recently.",
     "cakes.recentEmpty": "Your recently viewed cakes will appear here.",
+    "cakes.detailsTitle": "Cake Details",
+    "cakes.detailsHint": "Tap any cake's Details button to see full flavor notes and photos.",
     "cakes.noResults": "No cakes found. Try a different search or filter.",
     "cakes.modalTitle": "Place Your Order",
     "cakes.modalDesc": "Complete the details below and continue on WhatsApp.",
@@ -211,6 +356,8 @@ const TRANSLATIONS = {
     "btn.orderNow": "Order Now",
     "btn.orderThis": "Order This Cake",
     "btn.orderAgain": "Order Again",
+    "btn.details": "Details",
+    "btn.closeDetails": "Close Details",
     "btn.compareCta": "Compare ({count}/3)",
     "btn.call": "Call",
     "btn.whatsapp": "WhatsApp",
@@ -305,7 +452,7 @@ const TRANSLATIONS = {
     "home.step3Desc": "വിശദാംശങ്ങൾ അയച്ച് ഡെലിവറി സ്ലോട്ട് ഉറപ്പാക്കൂ.",
     "cakes.eyebrow": "Sweet Pan's കളക്ഷൻ",
     "cakes.title": "കേക്ക് തിരഞ്ഞെടുക്കൂ, പിന്നെ ഓർഡർ കസ്റ്റമൈസ് ചെയ്യൂ.",
-    "cakes.desc": "കേക്കിന്റെ പേര് തിരയാം അല്ലെങ്കിൽ അവസരം അടിസ്ഥാനമാക്കി ബ്രൗസ് ചെയ്യാം.",
+    "cakes.desc": "കേക്കുകൾ ബ്രൗസ് ചെയ്ത് Details അമർത്തി മുഴുവൻ വിവരങ്ങൾ കണ്ട ശേഷം ഉടൻ ഓർഡർ ചെയ്യാം.",
     "cakes.searchLabel": "കേക്കിന്റെ പേര് തിരയുക",
     "cakes.searchPlaceholder": "ഉദാ: Black Forest, Chocolate, Vanilla...",
     "cakes.occasionLabel": "അവസരം",
@@ -315,6 +462,8 @@ const TRANSLATIONS = {
     "cakes.recentTitle": "ഇടയ്ക്കെ കണ്ടവ",
     "cakes.recentDesc": "ഇപ്പോൾ തുറന്ന കേക്കുകൾ വീണ്ടും കാണാം.",
     "cakes.recentEmpty": "ഇവിടെ നിങ്ങൾ കണ്ട കേക്കുകൾ കാണിക്കും.",
+    "cakes.detailsTitle": "കേക്ക് വിശദാംശങ്ങൾ",
+    "cakes.detailsHint": "കാർഡിലെ Details അമർത്തി പൂർണ്ണ ഫ്ലേവർ വിവരങ്ങളും ഫോട്ടോകളും കാണാം.",
     "cakes.noResults": "കേക്ക് കണ്ടെത്താനായില്ല. മറ്റൊരു തിരച്ചിൽ ശ്രമിക്കൂ.",
     "cakes.modalTitle": "ഓർഡർ നൽകുക",
     "cakes.modalDesc": "വിവരങ്ങൾ പൂരിപ്പിച്ച് WhatsApp-ൽ തുടരുക.",
@@ -353,6 +502,8 @@ const TRANSLATIONS = {
     "btn.orderNow": "ഇപ്പോൾ ഓർഡർ",
     "btn.orderThis": "ഈ കേക്ക് ഓർഡർ ചെയ്യുക",
     "btn.orderAgain": "വീണ്ടും ഓർഡർ",
+    "btn.details": "Details",
+    "btn.closeDetails": "വിശദാംശം അടയ്‌ക്കുക",
     "btn.compareCta": "Compare ({count}/3)",
     "btn.call": "Call",
     "btn.whatsapp": "WhatsApp",
@@ -697,17 +848,17 @@ function setupCakesPage() {
     return;
   }
 
-  const searchInput = document.getElementById("cakeSearch");
-  const occasionFilter = document.getElementById("occasionFilter");
   const emptyState = document.getElementById("cakesEmpty");
-  const comparePanel = document.querySelector(".compare-panel");
-  const openCompareButton = document.querySelector("[data-open-compare]");
-  const compareGrid = document.getElementById("compareGrid");
-  const compareEmpty = document.getElementById("compareEmpty");
-  const compareCount = document.getElementById("compareCount");
-  const clearCompareButton = document.querySelector("[data-clear-compare]");
   const recentlyViewedGrid = document.getElementById("recentlyViewedGrid");
   const recentlyViewedEmpty = document.getElementById("recentlyViewedEmpty");
+  const detailsPanel = document.getElementById("cakeDetailsPanel");
+  const detailsName = document.getElementById("cakeDetailsName");
+  const detailsAbout = document.getElementById("cakeDetailsAbout");
+  const detailsPoints = document.getElementById("cakeDetailsPoints");
+  const detailsMainImage = document.getElementById("cakeDetailsMainImage");
+  const detailsThumbs = document.getElementById("cakeDetailsThumbs");
+  const detailsCloseButton = document.querySelector("[data-details-close]");
+  const detailsOrderButton = document.querySelector("[data-details-order]");
   const modal = document.getElementById("orderModal");
   const lightbox = document.getElementById("galleryLightbox");
   const lightboxImage = document.getElementById("galleryLightboxImage");
@@ -715,12 +866,15 @@ function setupCakesPage() {
   const lightboxCloseButton = lightbox?.querySelector("[data-lightbox-close]");
   const lightboxPrevButton = lightbox?.querySelector("[data-lightbox-prev]");
   const lightboxNextButton = lightbox?.querySelector("[data-lightbox-next]");
-  const comparedCakeIds = new Set();
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   let filteredCakes = [...cakesData];
   let lightboxIndex = 0;
   let lightboxPreviousFocus = null;
+  let activeDetailsCakeId = "";
+  let cardImageRotatorId = null;
 
   const isLightboxOpen = () => Boolean(lightbox?.classList.contains("is-open"));
+  const getCakeGallery = (cake) => (Array.isArray(cake?.gallery) && cake.gallery.length ? cake.gallery : [cake.image]).filter(Boolean);
 
   const renderLightbox = () => {
     if (!lightbox || !lightboxImage || !lightboxCaption || filteredCakes.length === 0) {
@@ -778,33 +932,48 @@ function setupCakesPage() {
     renderLightbox();
   };
 
-  const renderCompare = () => {
-    if (!compareGrid) {
+  const stopCardImageRotator = () => {
+    if (cardImageRotatorId !== null) {
+      window.clearInterval(cardImageRotatorId);
+      cardImageRotatorId = null;
+    }
+  };
+
+  const startCardImageRotator = () => {
+    stopCardImageRotator();
+    if (prefersReducedMotion) {
       return;
     }
 
-    const compareList = Array.from(comparedCakeIds)
-      .map((cakeId) => getCakeById(cakeId))
-      .filter(Boolean);
+    const rotatingImages = Array.from(cakesGrid.querySelectorAll("[data-card-rotating-image]"))
+      .filter((image) => {
+        const cake = getCakeById(image.dataset.cardCakeId);
+        return getCakeGallery(cake).length > 1;
+      });
 
-    compareGrid.innerHTML = compareList.map((cake) => createCompareCard(cake)).join("");
-
-    if (compareEmpty) {
-      compareEmpty.hidden = compareList.length !== 0;
+    if (rotatingImages.length === 0) {
+      return;
     }
 
-    if (compareCount) {
-      compareCount.textContent = t("compare.selectedCount", { count: compareList.length });
-    }
+    cardImageRotatorId = window.setInterval(() => {
+      if (document.hidden) {
+        return;
+      }
 
-    if (clearCompareButton) {
-      clearCompareButton.disabled = compareList.length === 0;
-    }
+      rotatingImages.forEach((image) => {
+        const cake = getCakeById(image.dataset.cardCakeId);
+        if (!cake) {
+          return;
+        }
 
-    if (openCompareButton) {
-      openCompareButton.disabled = compareList.length === 0;
-      openCompareButton.textContent = t("btn.compareCta", { count: compareList.length });
-    }
+        const gallery = getCakeGallery(cake);
+        const currentIndex = Number.parseInt(image.dataset.galleryIndex || "0", 10);
+        const safeIndex = Number.isNaN(currentIndex) ? 0 : currentIndex;
+        const nextIndex = (safeIndex + 1) % gallery.length;
+        image.src = gallery[nextIndex];
+        image.dataset.galleryIndex = String(nextIndex);
+      });
+    }, 3200);
   };
 
   const renderRecentlyViewed = () => {
@@ -840,48 +1009,89 @@ function setupCakesPage() {
     openModal(modal);
   };
 
-  const renderCakes = () => {
-    const query = (searchInput?.value || "").trim().toLowerCase();
-    const selectedOccasion = occasionFilter?.value || "all";
+  const setDetailsMainImage = (cake, index) => {
+    if (!detailsMainImage || !detailsThumbs) {
+      return;
+    }
 
-    filteredCakes = cakesData.filter((cake) => {
-      const matchesSearch = cake.name.toLowerCase().includes(query);
-      const matchesOccasion = selectedOccasion === "all" || cake.occasions.includes(selectedOccasion);
-      return matchesSearch && matchesOccasion;
+    const gallery = getCakeGallery(cake);
+    if (gallery.length === 0) {
+      return;
+    }
+
+    const safeIndex = ((index % gallery.length) + gallery.length) % gallery.length;
+    detailsMainImage.src = gallery[safeIndex];
+    detailsMainImage.alt = `${cake.name} photo ${safeIndex + 1}`;
+    detailsThumbs.dataset.activeIndex = String(safeIndex);
+
+    detailsThumbs.querySelectorAll("[data-thumb-index]").forEach((thumb) => {
+      const thumbIndex = Number.parseInt(thumb.dataset.thumbIndex || "-1", 10);
+      thumb.classList.toggle("is-active", thumbIndex === safeIndex);
+      thumb.setAttribute("aria-pressed", String(thumbIndex === safeIndex));
     });
+  };
+
+  const openCakeDetails = (cakeId, options = {}) => {
+    const { scrollIntoView = true, trackView = true } = options;
+    if (!detailsPanel || !detailsName || !detailsAbout || !detailsPoints || !detailsThumbs) {
+      return;
+    }
+
+    const cake = getCakeById(cakeId);
+    if (!cake) {
+      return;
+    }
+
+    activeDetailsCakeId = cakeId;
+    detailsPanel.hidden = false;
+    detailsName.textContent = cake.name;
+    detailsAbout.textContent = cake.details || cake.description;
+    detailsPoints.innerHTML = (cake.detailPoints || []).map((point) => `<li>${point}</li>`).join("");
+
+    const gallery = getCakeGallery(cake);
+    detailsThumbs.innerHTML = gallery.map((imageUrl, imageIndex) => `
+      <button
+        type="button"
+        class="cake-details-thumb${imageIndex === 0 ? " is-active" : ""}"
+        data-thumb-index="${imageIndex}"
+        aria-label="Show ${cake.name} photo ${imageIndex + 1}"
+        aria-pressed="${imageIndex === 0 ? "true" : "false"}"
+      >
+        <img src="${imageUrl}" alt="${cake.name} photo ${imageIndex + 1}">
+      </button>
+    `).join("");
+
+    setDetailsMainImage(cake, 0);
+    if (trackView) {
+      saveRecentlyViewedCake(cakeId);
+      renderRecentlyViewed();
+    }
+
+    if (scrollIntoView) {
+      detailsPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  const closeCakeDetails = () => {
+    if (!detailsPanel) {
+      return;
+    }
+    detailsPanel.hidden = true;
+    activeDetailsCakeId = "";
+  };
+
+  const renderCakes = () => {
+    filteredCakes = [...cakesData];
 
     cakesGrid.innerHTML = filteredCakes.map((cake) => createCakeCard(cake)).join("");
+    startCardImageRotator();
     if (emptyState) {
       emptyState.hidden = filteredCakes.length !== 0;
     }
   };
 
-  const toggleCompareCake = (cakeId) => {
-    if (!cakeId || !getCakeById(cakeId)) {
-      return;
-    }
-
-    if (comparedCakeIds.has(cakeId)) {
-      comparedCakeIds.delete(cakeId);
-      showToast(t("toast.removedCompare"));
-    } else if (comparedCakeIds.size >= MAX_COMPARE_CAKES) {
-      showToast(t("toast.maxCompare", { count: MAX_COMPARE_CAKES }));
-      return;
-    } else {
-      comparedCakeIds.add(cakeId);
-      showToast(t("toast.addedCompare"));
-    }
-
-    renderCompare();
-    renderCakes();
-  };
-
   renderCakes();
-  renderCompare();
   renderRecentlyViewed();
-
-  searchInput?.addEventListener("input", renderCakes);
-  occasionFilter?.addEventListener("change", renderCakes);
 
   cakesGrid.addEventListener("click", (event) => {
     const imageButton = event.target.closest("[data-gallery-cake]");
@@ -890,26 +1100,9 @@ function setupCakesPage() {
       return;
     }
 
-    const compareButton = event.target.closest("[data-compare-cake]");
-    if (compareButton) {
-      toggleCompareCake(compareButton.dataset.compareCake);
-      return;
-    }
-
-    const orderButton = event.target.closest("[data-order-cake]");
-    if (!orderButton) {
-      return;
-    }
-
-    openCakeOrderModal(orderButton.dataset.orderCake, orderButton);
-  });
-
-  compareGrid?.addEventListener("click", (event) => {
-    const removeButton = event.target.closest("[data-remove-compare]");
-    if (removeButton) {
-      comparedCakeIds.delete(removeButton.dataset.removeCompare);
-      renderCompare();
-      renderCakes();
+    const detailsButton = event.target.closest("[data-details-cake]");
+    if (detailsButton) {
+      openCakeDetails(detailsButton.dataset.detailsCake);
       return;
     }
 
@@ -930,22 +1123,33 @@ function setupCakesPage() {
     openCakeOrderModal(orderButton.dataset.orderCake, orderButton);
   });
 
-  clearCompareButton?.addEventListener("click", () => {
-    comparedCakeIds.clear();
-    renderCompare();
-    renderCakes();
-  });
-
-  openCompareButton?.addEventListener("click", () => {
-    if (!comparePanel || comparedCakeIds.size === 0) {
+  detailsThumbs?.addEventListener("click", (event) => {
+    const thumbButton = event.target.closest("[data-thumb-index]");
+    if (!thumbButton || !activeDetailsCakeId) {
       return;
     }
 
-    comparePanel.scrollIntoView({ behavior: "smooth", block: "start" });
-    comparePanel.classList.add("is-highlighted");
-    window.setTimeout(() => {
-      comparePanel.classList.remove("is-highlighted");
-    }, 700);
+    const cake = getCakeById(activeDetailsCakeId);
+    if (!cake) {
+      return;
+    }
+
+    const thumbIndex = Number.parseInt(thumbButton.dataset.thumbIndex || "0", 10);
+    if (Number.isNaN(thumbIndex)) {
+      return;
+    }
+
+    setDetailsMainImage(cake, thumbIndex);
+  });
+
+  detailsCloseButton?.addEventListener("click", closeCakeDetails);
+
+  detailsOrderButton?.addEventListener("click", () => {
+    if (!activeDetailsCakeId) {
+      return;
+    }
+
+    openCakeOrderModal(activeDetailsCakeId, detailsOrderButton);
   });
 
   lightboxCloseButton?.addEventListener("click", closeLightbox);
@@ -960,10 +1164,12 @@ function setupCakesPage() {
 
   document.addEventListener("languagechange", () => {
     renderCakes();
-    renderCompare();
     renderRecentlyViewed();
     if (isLightboxOpen()) {
       renderLightbox();
+    }
+    if (activeDetailsCakeId) {
+      openCakeDetails(activeDetailsCakeId, { scrollIntoView: false, trackView: false });
     }
   });
 
@@ -990,6 +1196,11 @@ function setupCakesPage() {
       return;
     }
 
+    if (event.key === "Escape" && activeDetailsCakeId) {
+      closeCakeDetails();
+      return;
+    }
+
     if (!activeModal) {
       return;
     }
@@ -1002,15 +1213,25 @@ function setupCakesPage() {
       trapFocusInModal(event, activeModal);
     }
   });
+
+  window.addEventListener("beforeunload", stopCardImageRotator);
 }
 
 function createCakeCard(cake) {
   const occasionText = cake.occasions.map(formatOccasion).join(", ");
+  const gallery = Array.isArray(cake.gallery) && cake.gallery.length ? cake.gallery : [cake.image];
+  const firstImage = gallery[0] || cake.image;
 
   return `
     <article class="card">
       <button type="button" class="card-image-btn" data-gallery-cake="${cake.id}" aria-label="${cake.name}">
-        <img src="${cake.image}" alt="${cake.name}">
+        <img
+          src="${firstImage}"
+          alt="${cake.name}"
+          data-card-rotating-image
+          data-card-cake-id="${cake.id}"
+          data-gallery-index="0"
+        >
       </button>
       <div class="card-body">
         <h3>${cake.name}</h3>
@@ -1019,6 +1240,7 @@ function createCakeCard(cake) {
         <p class="suggestion">${t("label.bestFor")}: ${occasionText}</p>
         <div class="card-actions">
           <button type="button" class="btn btn-primary btn-block" data-order-cake="${cake.id}">${t("btn.orderNow")}</button>
+          <button type="button" class="btn btn-outline btn-sm btn-details" data-details-cake="${cake.id}">${t("btn.details")}</button>
         </div>
       </div>
     </article>

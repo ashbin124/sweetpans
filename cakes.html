@@ -58,7 +58,7 @@
       <div class="container">
         <span class="eyebrow" data-i18n="cakes.eyebrow">Sweet Pan's Collection</span>
         <h1 data-i18n="cakes.title">Choose your cake, then customize your order.</h1>
-        <p class="muted" data-i18n="cakes.desc">Search by cake name or browse by occasion suggestions before ordering.</p>
+        <p class="muted" data-i18n="cakes.desc">Browse cakes, tap Details for full info, and place your order in seconds.</p>
       </div>
     </section>
 
@@ -72,6 +72,30 @@
           <p class="muted small" data-i18n="cakes.recentDesc">Quickly revisit cakes you opened recently.</p>
           <p id="recentlyViewedEmpty" class="empty-state" data-i18n="cakes.recentEmpty">Your recently viewed cakes will appear here.</p>
           <div id="recentlyViewedGrid" class="recent-grid"></div>
+        </section>
+
+        <section id="cakeDetailsPanel" class="cake-details-panel" aria-labelledby="cakeDetailsHeading" hidden>
+          <div class="cake-details-header">
+            <div>
+              <h2 id="cakeDetailsHeading" class="section-title" data-i18n="cakes.detailsTitle">Cake Details</h2>
+              <p class="muted small" data-i18n="cakes.detailsHint">Tap any cake's Details button to see full flavor notes and photos.</p>
+            </div>
+            <button type="button" class="btn btn-outline btn-sm" data-details-close data-i18n="btn.closeDetails">Close Details</button>
+          </div>
+          <div class="cake-details-content">
+            <div class="cake-details-gallery">
+              <img id="cakeDetailsMainImage" src="" alt="">
+              <div id="cakeDetailsThumbs" class="cake-details-thumbs" aria-label="Cake photo thumbnails"></div>
+            </div>
+            <div class="cake-details-copy">
+              <h3 id="cakeDetailsName"></h3>
+              <p id="cakeDetailsAbout" class="muted"></p>
+              <ul id="cakeDetailsPoints" class="cake-details-points"></ul>
+              <div class="cake-details-actions">
+                <button type="button" class="btn btn-primary" data-details-order data-i18n="btn.orderThis">Order This Cake</button>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </section>
