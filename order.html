@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Cake | Sweet Pan's</title>
+  <meta name="description" content="Place your Sweet Pan's cake order with live pricing and WhatsApp checkout.">
+  <meta name="theme-color" content="#f6c86f">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sweet Pan's">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Order Cake | Sweet Pan's">
+  <meta property="og:description" content="Place your Sweet Pan's cake order with live pricing and WhatsApp checkout.">
+  <meta property="og:image" content="assets/og-cover.svg">
+  <meta property="og:image:alt" content="Sweet Pan's premium homemade cakes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Order Cake | Sweet Pan's">
+  <meta name="twitter:description" content="Place your Sweet Pan's cake order with live pricing and WhatsApp checkout.">
+  <meta name="twitter:image" content="assets/og-cover.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="index.html" class="brand">Sweet Pan&rsquo;s</a>
+      <div class="lang-toggle" role="group" data-i18n-aria="lang.switch">
+        <button type="button" class="lang-btn" data-set-lang="en" data-i18n="lang.en" aria-pressed="false">EN</button>
+        <button type="button" class="lang-btn" data-set-lang="ml" data-i18n="lang.ml" aria-pressed="false">മ</button>
+      </div>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" data-nav>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="cakes.html" data-i18n="nav.cakes">Cakes</a>
+        <a href="order.html" class="active" data-i18n="nav.order">Order</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-sm page-intro">
+      <div class="container">
+        <span class="eyebrow" data-i18n="order.eyebrow">Place Your Order</span>
+        <h1 data-i18n="order.title">Customize every detail, then confirm on WhatsApp.</h1>
+        <p class="muted" data-i18n="order.desc">Live price updates include weight, quantity, and optional extra tier charges.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="order-layout">
+          <div class="order-main">
+            <div class="order-form-intro">
+              <h2 data-i18n="order.compactTitle">Compact & Fast Ordering</h2>
+              <p class="muted small" data-i18n="order.compactDesc">Fill only what matters, review in the live snapshot, and send instantly on WhatsApp.</p>
+            </div>
+
+            <div class="order-progress" data-order-progress data-i18n-aria="order.progressAria" aria-label="Order form progress">
+              <button type="button" class="order-progress-chip" data-progress-step="contact" aria-pressed="false">
+                <span class="order-progress-number">1</span>
+                <span data-i18n="order.sectionContact">Contact Details</span>
+              </button>
+              <button type="button" class="order-progress-chip" data-progress-step="cake" aria-pressed="false">
+                <span class="order-progress-number">2</span>
+                <span data-i18n="order.sectionCake">Cake Details</span>
+              </button>
+              <button type="button" class="order-progress-chip" data-progress-step="delivery" aria-pressed="false">
+                <span class="order-progress-number">3</span>
+                <span data-i18n="order.sectionDelivery">Delivery Details</span>
+              </button>
+              <button type="button" class="order-progress-chip" data-progress-step="notes" aria-pressed="false">
+                <span class="order-progress-number">4</span>
+                <span data-i18n="order.sectionNotes">Message & Notes</span>
+              </button>
+            </div>
+
+            <div class="order-shell order-shell-compact">
+              <form class="order-form" data-order-form novalidate>
+                <details class="order-section-card order-accordion" data-order-section="contact" open>
+                  <summary class="order-section-summary">
+                    <span class="order-section-chip">1</span>
+                    <span class="order-section-title" data-i18n="order.sectionContact">Contact Details</span>
+                    <span class="order-section-status" aria-hidden="true"></span>
+                  </summary>
+                  <div class="order-section-panel">
+                    <div class="form-grid two-col">
+                      <div class="form-group">
+                        <label for="orderCustomerName" data-i18n="form.customerName">Customer name *</label>
+                        <input type="text" id="orderCustomerName" name="customerName" autocomplete="name" required>
+                        <p class="field-error" data-error-for="customerName"></p>
+                      </div>
+                      <div class="form-group">
+                        <label for="orderPhone" data-i18n="form.phone">Phone number *</label>
+                        <input type="tel" id="orderPhone" name="phone" inputmode="tel" autocomplete="tel" placeholder="+91" required>
+                        <p class="field-error" data-error-for="phone"></p>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+
+                <details class="order-section-card order-accordion" data-order-section="cake" open>
+                  <summary class="order-section-summary">
+                    <span class="order-section-chip">2</span>
+                    <span class="order-section-title" data-i18n="order.sectionCake">Cake Details</span>
+                    <span class="order-section-status" aria-hidden="true"></span>
+                  </summary>
+                  <div class="order-section-panel">
+                    <div class="form-grid two-col">
+                      <div class="form-group">
+                        <label for="orderCake" data-i18n="form.selectCake">Select cake *</label>
+                        <select id="orderCake" name="cakeId" data-cake-select required>
+                          <option value="" data-i18n="form.chooseCake">Choose your cake</option>
+                        </select>
+                        <p class="field-error" data-error-for="cakeId"></p>
+                        <span class="price-per-kg"><span data-i18n="form.pricePerKg">Price per KG:</span> <strong data-price-display data-i18n="form.selectCakeFirst">Select cake first</strong></span>
+                      </div>
+                      <div class="form-group">
+                        <label for="orderWeight" data-i18n="form.weight">Weight *</label>
+                        <select id="orderWeight" name="weight" required>
+                          <option value="0.5">0.5kg</option>
+                          <option value="1" selected>1kg</option>
+                          <option value="1.5">1.5kg</option>
+                          <option value="2">2kg</option>
+                          <option value="3">3kg</option>
+                        </select>
+                        <p class="field-error" data-error-for="weight"></p>
+                      </div>
+                      <div class="form-group">
+                        <label for="orderQuantity" data-i18n="form.quantity">Quantity *</label>
+                        <div class="qty-control">
+                          <button type="button" class="qty-btn" data-qty-step="-1" aria-label="Decrease quantity">-</button>
+                          <input type="number" id="orderQuantity" name="quantity" min="1" step="1" value="1" inputmode="numeric" required>
+                          <button type="button" class="qty-btn" data-qty-step="1" aria-label="Increase quantity">+</button>
+                        </div>
+                        <p class="field-error" data-error-for="quantity"></p>
+                      </div>
+                      <div class="form-group">
+                        <label for="orderTiers" data-i18n="form.tiers">Tiers</label>
+                        <select id="orderTiers" name="tiers">
+                          <option value="1" selected data-i18n="tier.1">1 tier (+₹0)</option>
+                          <option value="2" data-i18n="tier.2">2 tier (+₹200)</option>
+                          <option value="3" data-i18n="tier.3">3 tier (+₹400)</option>
+                        </select>
+                        <p class="field-error" data-error-for="tiers"></p>
+                      </div>
+                      <div class="form-group">
+                        <label for="orderOccasion" data-i18n="form.occasion">Occasion *</label>
+                        <select id="orderOccasion" name="occasion" required>
+                          <option value="" data-i18n="form.selectOccasion">Select occasion</option>
+                          <option value="birthday" data-i18n="option.birthday">Birthday</option>
+                          <option value="anniversary" data-i18n="option.anniversary">Anniversary</option>
+                          <option value="wedding" data-i18n="option.wedding">Wedding</option>
+                          <option value="engagement" data-i18n="option.engagement">Engagement</option>
+                          <option value="baby shower" data-i18n="option.babyShower">Baby Shower</option>
+                          <option value="graduation" data-i18n="option.graduation">Graduation</option>
+                          <option value="other" data-i18n="option.other">Other</option>
+                        </select>
+                        <p class="field-error" data-error-for="occasion"></p>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+
+                <details class="order-section-card order-accordion" data-order-section="delivery" open>
+                  <summary class="order-section-summary">
+                    <span class="order-section-chip">3</span>
+                    <span class="order-section-title" data-i18n="order.sectionDelivery">Delivery Details</span>
+                    <span class="order-section-status" aria-hidden="true"></span>
+                  </summary>
+                  <div class="order-section-panel">
+                    <div class="form-grid two-col">
+                      <div class="form-group">
+                        <label for="orderDeliveryDate" data-i18n="form.deliveryDate">Delivery date *</label>
+                        <input type="date" id="orderDeliveryDate" name="deliveryDate" required>
+                        <p class="field-error" data-error-for="deliveryDate"></p>
+                      </div>
+                      <div class="form-group">
+                        <label for="orderDeliverySlot" data-i18n="form.deliverySlot">Delivery slot *</label>
+                        <select id="orderDeliverySlot" name="deliverySlot" required>
+                          <option value="" data-i18n="form.selectSlot">Select a delivery slot</option>
+                        </select>
+                        <p class="muted small" data-i18n="form.slotHint">Same-day slots depend on time and availability.</p>
+                        <p class="field-error" data-error-for="deliverySlot"></p>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="orderAddress" data-i18n="form.address">Address *</label>
+                      <textarea id="orderAddress" name="address" autocomplete="street-address" placeholder="House number, street, landmark, area" required></textarea>
+                      <p class="field-error" data-error-for="address"></p>
+                    </div>
+                  </div>
+                </details>
+
+                <details class="order-section-card order-accordion" data-order-section="notes" open>
+                  <summary class="order-section-summary">
+                    <span class="order-section-chip">4</span>
+                    <span class="order-section-title" data-i18n="order.sectionNotes">Message & Notes</span>
+                    <span class="order-section-status" aria-hidden="true"></span>
+                  </summary>
+                  <div class="order-section-panel">
+                    <div class="form-group">
+                      <label for="orderCakeMessage" data-i18n="form.messageOnCake">Message on cake</label>
+                      <input type="text" id="orderCakeMessage" name="cakeMessage" placeholder="Happy Anniversary Priya & Raj">
+                      <p class="field-error" data-error-for="cakeMessage"></p>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="orderExtraDetails" data-i18n="form.extraDetails">Extra details</label>
+                      <textarea id="orderExtraDetails" name="extraDetails" placeholder="Any notes for flavor, decoration, or delivery timing"></textarea>
+                      <p class="field-error" data-error-for="extraDetails"></p>
+                    </div>
+                  </div>
+                </details>
+
+                <div class="total-price">
+                  <span data-i18n="form.totalPrice">Total Price</span>
+                  <strong data-total-price>₹0</strong>
+                </div>
+
+                <div class="form-actions-row">
+                  <button type="reset" class="btn btn-outline" data-i18n="btn.resetForm">Reset Form</button>
+                  <button type="button" class="btn btn-whatsapp" data-submit-order data-i18n="btn.orderWhatsapp">Order on WhatsApp</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <aside class="order-summary-card">
+            <h3 data-i18n="order.snapshotTitle">Order Snapshot</h3>
+            <p class="muted small" data-i18n="order.snapshotDesc">Live preview of your selected options.</p>
+            <div class="summary-list">
+              <div class="summary-row"><span data-i18n="order.summaryCake">Cake</span><strong data-summary-cake>-</strong></div>
+              <div class="summary-row"><span data-i18n="order.summaryPrice">Price</span><strong data-summary-price>-</strong></div>
+              <div class="summary-row"><span data-i18n="order.summaryWeight">Weight</span><strong data-summary-weight>-</strong></div>
+              <div class="summary-row"><span data-i18n="order.summaryQuantity">Quantity</span><strong data-summary-quantity>-</strong></div>
+              <div class="summary-row"><span data-i18n="order.summaryTiers">Tiers</span><strong data-summary-tiers>-</strong></div>
+              <div class="summary-row"><span data-i18n="order.summaryOccasion">Occasion</span><strong data-summary-occasion>-</strong></div>
+              <div class="summary-row"><span data-i18n="order.summaryDate">Date</span><strong data-summary-date>-</strong></div>
+              <div class="summary-row"><span data-i18n="order.summarySlot">Slot</span><strong data-summary-slot>-</strong></div>
+            </div>
+            <div class="total-price summary-total">
+              <span data-i18n="order.summaryTotal">Estimated Total</span>
+              <strong data-summary-total>₹0</strong>
+            </div>
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa-link data-i18n="btn.needWhatsapp">WhatsApp Support</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Sweet Pan&rsquo;s</h3>
+        <p class="muted">Premium homemade cakes with custom messages and quality ingredients.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <div class="footer-links">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="cakes.html" data-i18n="nav.cakes">Cakes</a>
+          <a href="order.html" data-i18n="nav.order">Order</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <div class="footer-contact">
+          <a href="#" class="btn btn-soft" data-call-link data-i18n="btn.call">Call</a>
+          <a href="#" class="btn btn-whatsapp" data-wa-link data-i18n="btn.whatsapp">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <p class="copyright">&copy; <span data-year></span> Sweet Pan&rsquo;s. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="mobile-bottom-bar" aria-label="Mobile quick actions">
+    <a href="#" class="quick-btn call" data-call-link data-i18n="btn.callNow">Call Now</a>
+    <a href="#" class="quick-btn whatsapp" data-wa-link data-i18n="btn.whatsapp">WhatsApp</a>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

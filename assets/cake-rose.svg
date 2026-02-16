@@ -1,0 +1,13 @@
+<svg width="600" height="450" viewBox="0 0 600 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="a" x1="64" y1="52" x2="540" y2="414" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCE4EE"/>
+      <stop offset="1" stop-color="#F6CADB"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" rx="36" fill="url(#a)"/>
+  <rect x="124" y="266" width="352" height="60" rx="24" fill="#F4B8CF"/>
+  <rect x="164" y="196" width="272" height="72" rx="30" fill="#FFFFFF"/>
+  <circle cx="300" cy="166" r="42" fill="#D77D9F"/>
+  <text x="300" y="392" text-anchor="middle" fill="#7C4A5E" font-family="Arial, sans-serif" font-size="28" font-weight="700">Rose Collection</text>
+</svg>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Pan's | Premium Homemade Cakes</title>
+  <meta name="description" content="Sweet Pan's makes premium homemade cakes with custom messages and on-time delivery.">
+  <meta name="theme-color" content="#f6c86f">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sweet Pan's">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Sweet Pan's | Premium Homemade Cakes">
+  <meta property="og:description" content="Sweet Pan's makes premium homemade cakes with custom messages and on-time delivery.">
+  <meta property="og:image" content="assets/og-cover.svg">
+  <meta property="og:image:alt" content="Sweet Pan's premium homemade cakes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sweet Pan's | Premium Homemade Cakes">
+  <meta name="twitter:description" content="Sweet Pan's makes premium homemade cakes with custom messages and on-time delivery.">
+  <meta name="twitter:image" content="assets/og-cover.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="index.html" class="brand">Sweet Pan&rsquo;s</a>
+      <div class="lang-toggle" role="group" data-i18n-aria="lang.switch">
+        <button type="button" class="lang-btn" data-set-lang="en" data-i18n="lang.en" aria-pressed="false">EN</button>
+        <button type="button" class="lang-btn" data-set-lang="ml" data-i18n="lang.ml" aria-pressed="false">മ</button>
+      </div>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-label="Open navigation" aria-controls="primary-nav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" data-nav>
+        <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+        <a href="cakes.html" data-i18n="nav.cakes">Cakes</a>
+        <a href="order.html" data-i18n="nav.order">Order</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow" data-i18n="home.eyebrow">Premium Homemade Bakery</span>
+          <h1 class="hero-title-gradient" data-i18n="home.title">Beautiful cakes that feel as special as your celebration.</h1>
+          <p class="muted" data-i18n="home.desc">From elegant birthdays to dreamy anniversaries, every Sweet Pan&rsquo;s cake is baked fresh, styled with care, and delivered on time.</p>
+          <div class="hero-actions">
+            <a href="cakes.html" class="btn btn-primary" data-i18n="btn.viewCakes">View Cakes</a>
+            <a href="#" class="btn btn-whatsapp" data-wa-link data-i18n="btn.orderWhatsapp">Order on WhatsApp</a>
+            <a href="#" class="btn btn-soft" data-call-link data-i18n="btn.callOrder">Call for Order</a>
+          </div>
+          <div class="trust-badges">
+            <span class="badge" data-i18n="home.badgeFresh">Freshly Baked</span>
+            <span class="badge" data-i18n="home.badgeCustom">Custom Messages</span>
+            <span class="badge" data-i18n="home.badgeDelivery">On-Time Delivery</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img data-hero-rotating src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=80" alt="Premium celebration cake">
+          <div class="hero-slider-controls" aria-label="Hero cake slider controls">
+            <button type="button" class="hero-nav-btn" data-hero-prev aria-label="Previous cake image">&#10094;</button>
+            <div class="hero-dots" data-hero-dots aria-label="Choose cake image"></div>
+            <button type="button" class="hero-nav-btn" data-hero-next aria-label="Next cake image">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="home.bestSellers">Best Sellers</h2>
+        <div class="card-grid">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1517427294546-5aa121f68e8a?auto=format&fit=crop&w=900&q=80" alt="Black Forest cake">
+            <div class="card-body">
+              <h3>Black Forest</h3>
+              <p class="price">₹600/kg</p>
+              <p class="muted small">Classic chocolate sponge layered with cream and cherries.</p>
+              <a href="cakes.html" class="btn btn-outline btn-block">View Cake</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80" alt="White Forest cake">
+            <div class="card-body">
+              <h3>White Forest</h3>
+              <p class="price">₹600/kg</p>
+              <p class="muted small">Soft vanilla sponge with white chocolate and fresh cream.</p>
+              <a href="cakes.html" class="btn btn-outline btn-block">View Cake</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80" alt="Chocolate cake">
+            <div class="card-body">
+              <h3>Chocolate</h3>
+              <p class="price">₹800/kg</p>
+              <p class="muted small">Moist chocolate sponge finished with silky chocolate cream.</p>
+              <a href="cakes.html" class="btn btn-outline btn-block">View Cake</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80" alt="Chocolate Truffle cake">
+            <div class="card-body">
+              <h3>Chocolate Truffle</h3>
+              <p class="price">₹850/kg</p>
+              <p class="muted small">Rich dark truffle layers with smooth ganache topping.</p>
+              <a href="cakes.html" class="btn btn-outline btn-block">View Cake</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="home.howWorks">How It Works</h2>
+        <div class="steps">
+          <article class="step">
+            <span class="step-number">1</span>
+            <h3 data-i18n="home.step1Title">Choose Cake</h3>
+            <p class="muted" data-i18n="home.step1Desc">Browse flavors and pick the design that matches your vibe.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">2</span>
+            <h3 data-i18n="home.step2Title">Customize</h3>
+            <p class="muted" data-i18n="home.step2Desc">Select weight, tiers, occasion, and your cake message.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">3</span>
+            <h3 data-i18n="home.step3Title">Order on WhatsApp</h3>
+            <p class="muted" data-i18n="home.step3Desc">Send your details instantly and confirm your delivery slot.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="home.loved">Loved by Customers</h2>
+        <div class="testimonials">
+          <article class="testimonial">
+            <p>&ldquo;The cake looked premium and tasted even better. Everyone at the party asked where it was from.&rdquo;</p>
+            <p class="name">Riya A.</p>
+          </article>
+          <article class="testimonial">
+            <p>&ldquo;Super smooth ordering process on WhatsApp and right on-time delivery. Perfect for busy schedules.&rdquo;</p>
+            <p class="name">Nandini S.</p>
+          </article>
+          <article class="testimonial">
+            <p>&ldquo;Beautiful finish, light cream, and exactly the custom message I wanted. Highly recommend Sweet Pan&rsquo;s.&rdquo;</p>
+            <p class="name">Megha P.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Sweet Pan&rsquo;s</h3>
+        <p class="muted">Handcrafted homemade cakes with a premium finish, baked with love and hygiene.</p>
+        <div class="footer-contact">
+          <a href="#" class="btn btn-soft" data-call-link data-i18n="btn.call">Call</a>
+          <a href="#" class="btn btn-whatsapp" data-wa-link data-i18n="btn.whatsapp">WhatsApp</a>
+        </div>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <div class="footer-links">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="cakes.html" data-i18n="nav.cakes">Cakes</a>
+          <a href="order.html" data-i18n="nav.order">Order</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p class="muted">Phone: <a href="#" data-call-link>+91XXXXXXXXXX</a></p>
+        <p class="muted">WhatsApp: <a href="#" data-wa-link>Chat with us</a></p>
+        <p class="muted">Address: Angadipuram, Perinthalmanna, Malappuram, Kerala</p>
+      </div>
+    </div>
+    <div class="container">
+      <p class="copyright">&copy; <span data-year></span> Sweet Pan&rsquo;s. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="mobile-bottom-bar" aria-label="Mobile quick actions">
+    <a href="#" class="quick-btn call" data-call-link data-i18n="btn.callNow">Call Now</a>
+    <a href="#" class="quick-btn whatsapp" data-wa-link data-i18n="btn.whatsapp">WhatsApp</a>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
