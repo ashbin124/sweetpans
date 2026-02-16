@@ -471,18 +471,28 @@ function setupNavigation() {
     return;
   }
 
+  const setNavState = (isOpen) => {
+    nav.classList.toggle("open", isOpen);
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+    document.body.classList.toggle("nav-open", isOpen);
+  };
+
   const closeNav = () => {
-    nav.classList.remove("open");
-    navToggle.setAttribute("aria-expanded", "false");
+    setNavState(false);
   };
 
   navToggle.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("open");
-    navToggle.setAttribute("aria-expanded", String(isOpen));
+    setNavState(!nav.classList.contains("open"));
   });
 
   nav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", closeNav);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeNav();
+    }
   });
 
   document.addEventListener("click", (event) => {

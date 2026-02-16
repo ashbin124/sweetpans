@@ -1483,6 +1483,7 @@ body.lightbox-open {
   border-top: 1px solid #d9b8ea;
   background: linear-gradient(120deg, rgba(255, 227, 241, 0.98), rgba(231, 216, 255, 0.98), rgba(255, 221, 165, 0.98));
   box-shadow: 0 -10px 24px rgba(122, 84, 99, 0.17);
+  transition: transform var(--transition), opacity var(--transition);
 }
 
 .quick-btn {
@@ -1509,6 +1510,14 @@ body.lightbox-open {
 .quick-btn:hover,
 .quick-btn:focus-visible {
   transform: translateY(-1px);
+}
+
+body.nav-open .mobile-bottom-bar,
+body.modal-open .mobile-bottom-bar,
+body.lightbox-open .mobile-bottom-bar {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(120%);
 }
 
 .toast {
@@ -1580,6 +1589,18 @@ body.lightbox-open {
 }
 
 @media (max-width: 900px) {
+  body.nav-open {
+    overflow: hidden;
+  }
+
+  body.nav-open::before {
+    content: "";
+    position: fixed;
+    inset: 74px 0 0;
+    z-index: 60;
+    background: rgba(33, 21, 30, 0.34);
+  }
+
   .nav-toggle {
     display: inline-flex;
     margin-left: auto;
@@ -1595,6 +1616,12 @@ body.lightbox-open {
     padding: 0.75rem 0.9rem 1rem;
     display: grid;
     gap: 0.35rem;
+    max-height: calc(100vh - 74px - env(safe-area-inset-bottom));
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0 14px 28px rgba(116, 72, 98, 0.2);
     opacity: 0;
     pointer-events: none;
     transform: translateY(-12px);
@@ -1609,6 +1636,9 @@ body.lightbox-open {
 
   .primary-nav a {
     border-radius: 12px;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -1680,7 +1710,7 @@ body.lightbox-open {
 
 @media (max-width: 768px) {
   body {
-    padding-bottom: 86px;
+    padding-bottom: calc(96px + env(safe-area-inset-bottom));
     font-size: 16.5px;
     line-height: 1.74;
   }
@@ -1710,6 +1740,16 @@ body.lightbox-open {
 
   .hero {
     padding: 4.1rem 0 3.2rem;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.62rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
   }
 
   .hero-slider-controls {
@@ -1745,6 +1785,7 @@ body.lightbox-open {
   .btn {
     padding: 0.95rem 1.2rem;
     font-size: 0.98rem;
+    min-height: 46px;
   }
 
   .primary-nav a {
@@ -1807,7 +1848,7 @@ body.lightbox-open {
     display: grid;
     gap: 0.55rem;
     position: sticky;
-    bottom: 0.5rem;
+    bottom: calc(5.3rem + env(safe-area-inset-bottom));
     z-index: 3;
     padding: 0.55rem;
     border-radius: 14px;
@@ -1828,6 +1869,18 @@ body.lightbox-open {
   .qty-btn {
     width: 40px;
     height: 40px;
+  }
+
+  .nav-toggle,
+  .lang-btn,
+  .hero-nav-btn,
+  .qty-btn,
+  .compare-remove,
+  .lightbox-close,
+  .lightbox-nav,
+  .quick-btn {
+    min-height: 44px;
+    min-width: 44px;
   }
 
   .quick-btn {
